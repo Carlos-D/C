@@ -1,0 +1,46 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+#include <string.h>
+
+int est(int n, char *a, int *b, int *c)
+{
+	int i;
+	int result=0;
+	int r;
+
+	for (i=0;i<n;i++)
+	{
+		r=b[i]*c[i];
+		if (r>result)
+			result=r;
+	}
+	return result;
+}
+
+void test_est(void)
+{
+	int result=0;
+	char line[1024];
+	char *a[32];
+	int b[1000];
+	int c[1000];
+	int n=0;
+
+	scanf("%s",n);
+
+	while (fgets(line, 1024, stdin) != NULL)
+	 {
+		 sscanf(line, "%s %d %d", &a[result], &b[result], &c[result]);
+		 result++;
+	 }
+
+	est(n,a,b,c);
+
+	printf("%d",a[0]);
+}
+
+int main (void)
+{
+	test_est();
+}
