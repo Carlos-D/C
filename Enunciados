@@ -1,0 +1,63 @@
+Problema A
+
+Programe uma função de nome insert_sums que, dado um array de números inteiros, insere entre cada dois elementos consecutivos um novo elemento cujo valor é a soma dos valores desses dois elementos. Por exemplo, se o array valer <4,8,1,6,2>, depois da chamada da função valerá <4,12,8,9,1,7,6,8,2>. Os parâmetros da função são o array e o número de elementos. A função devolve o número de elementos do array modificado.
+
+Programe também a função de teste que lê da consola os valores do array por ordem (até ao fim dos dados), a seguir chama a função insert_sums e por fim escreve na consola os novos valores no array, um por linha.
+
+Considere que o array lido não é vazio e não tem mais do que 1000 elementos.
+
+
+
+
+Problema B
+
+Programe uma função de nome remove_below que, dado um array de números inteiros, elimina do array os elementos cujo valor é menor do que o índice da posição que ocupam. Por exemplo, se o array valer <7,5,1,2,4,3,8,5>, depois da chamada da função valerá <7,5,4,8>. Os argumentos da função são o array e o número de elementos. A função devolve o número de elementos do array modificado.
+
+Programe também uma função de teste que lê da consola uma sucessão de arrays (até ao fim dos dados), e para cada um dos arrays lidos chama a função remove_below e escreve na consola os novos valores no array.
+
+Na leitura, para cada array surge primeiro um número N, representado o número de elementos do array, seguido de N números inteiros, representando os valores no array.
+
+Na escrita, um array com M elementos é representado por M+1 números, todos na mesma linha, separados cada um do seguinte por um único espaço (não devendo haver na linha outros espaços que não esses). O primeiro número (desses M+1 números) é o número de elementos do array. Os restantes M números representam os elementos do array.
+
+Considere que o array lido não tem mais do que 1000 elementos (mas pode ser vazio).
+
+
+
+
+Problema C
+
+Depois dos azarados acontecimentos no estádio da Luz, por causa da tempestade, a UEFA está a considerar a hipótese de fazer jogar a final da liga dos campeões noutro estádio, porventura noutro país. De entre todos os estádios que se candidataram para em substituição receber o grande evento, a UEFA decidiu escolher aquele cujo relvado tem maior área, desde que, bem entendido, o relvado tenha dimensões regulamentares 1.
+
+Como todos sabemos, o comprimento do relvado deve ser no mínimo 90 metros e no máximo 120 metros e a largura deve ser no mínimo 45 metros e no máximo 90 metros.
+Tarefa
+
+Escreva um programa C que leia um ficheiro com informações sobre os estádios e escolha o estádio que deve receber a final, de acordo com os critérios da UEFA.
+Entrada
+
+Na primeira linha do ficheiro de entrada vem um número N, representando o número de estádios. Seguem-se N linhas. Em cada uma destas linhas há três elementos de informação: uma cadeia de caracteres, representando o nome do estádio, e dois números inteiros, representando o comprimento e a largura do relvado desse estádio.
+Saída
+
+O ficheiro de saída contém uma única linha, onde figura o nome do estádio escolhido. Em caso de empate, isto é, se houver dois ou mais estádios com a mesma área máxima (e dimensões regulamentares), o seu programa deve preferir o que aparece primeiro no ficheiro.
+Restrições
+
+Número de estádios: N, 0 < N = 1000.
+
+A cadeia de caracteres que constitui o nome do estádio não tem espaços, não é vazia e não tem mais de 31 caracteres.
+
+Em todos os casos de teste há pelo menos um estádio com as dimensões regulamentares.
+
+
+Exemplo de ficheiro de entrada
+
+5
+drag 110 85
+alg_arv 124 90
+light 120 80
+saintlouis 118 82
+alv_xxi 115 80
+
+
+
+Exemplo de ficheiro de saída
+
+saintlouis
