@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <math.h>
+
+void readfiles()
+{
+int nest,i,comp,larg,area,test,beta,areaf,run;
+test=1;beta=0;areaf=0;run=0;
+char nome[31];
+char nomef[31];
+
+scanf("%d",&nest);
+
+for(i=0;i<nest;i++)
+    {
+scanf("%s%d%d",nome,&comp,&larg);
+
+if(comp>=90&&comp<=120&&larg>=45&&larg<=90)
+{
+area=comp*larg;
+run=0;
+
+if(test==1)
+{
+while(run<31)
+{
+nomef[run]=nome[run];
+areaf=area;
+test++;run++;
+}
+}if(areaf!=area)
+{
+if (areaf<area)
+{
+while(run<31)
+{
+nomef[run]=nome[run];
+areaf=area;
+run++;
+}
+}
+}
+}
+}
+
+printf("%s\n",nomef);
+}
+
+int main(void)
+{
+readfiles();
+return 0;
+}
